@@ -1,0 +1,15 @@
+services:
+  mysqldb:
+    image: mysql
+    restart: always
+    volumes:
+      - ./data:/var/lib/mysql
+      # - mysql-compose-volume:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=hong1234
+      - MYSQL_DATABASE=hongdb
+    ports:
+      - "3307:3306"
+
+volumes:
+  mysql-compose-volume:
