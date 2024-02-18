@@ -6,4 +6,4 @@ ENV MYSQL_ROOT_PASSWORD=hong1234
 ENV MYSQL_DATABASE=hongdb
 ENV MYSQL_HOST=%
 
-CMD [ "--character-set-server=utf8mb4","--collation-server=utf8mb4_unicode_ci" ]
+CMD ["--character-set-server=utf8mb4", "--collation-server=utf8mb4_unicode_ci"]
