@@ -1,4 +1,4 @@
-# MYSQL 도커파일 생성 방법 
+# MYSQL 도커 파일 생성 방법 
 ```txt
 FROM mysql
 
