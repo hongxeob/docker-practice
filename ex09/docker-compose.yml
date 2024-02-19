@@ -1,7 +1,7 @@
 version: '3'
 services:
   db:
-    build: 
+    build:
       context: ./db
       dockerfile: Dockerfile
     ports:
@@ -12,7 +12,7 @@ services:
       - network
 
   backend:
-    build: 
+    build:
       context: ./product
       dockerfile: Dockerfile
     restart: always
@@ -28,17 +28,17 @@ services:
     networks:
       - network
 
-  # frontend:
-  #   build: 
-  #     context: ./my-app
-  #     dockerfile: Dockerfile
-  #   restart: always
-  #   ports:
-  #     - 80:80
-  #   depends_on:
-  #     - backend
-  #   networks:
-  #     - network
+  frontend:
+    build:
+      context: ./my-app
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - 80:80
+    depends_on:
+      - backend
+    networks:
+      - network
 
 networks:
   network:

@@ -13,7 +13,7 @@ import lombok.RequiredArgsConstructor;
 import shop.mtcoding.product.model.Product;
 import shop.mtcoding.product.model.ProductRepository;
 
-@CrossOrigin(origins = "http://localhost:3000")
+// @CrossOrigin(origins = "http://localhost:3000") - Nginx의 proxy pass가 되어 이제 설정해줄 필요가 없다.
 @RequiredArgsConstructor
 @RestController
 public class ProductController {
